@@ -7,6 +7,6 @@ class Mark(BaseModel):
     subject_name: str
     subject_id: int
     control_form_name: str
-    weight: str
+    weight: int
     created_at: str
     is_exam: bool
