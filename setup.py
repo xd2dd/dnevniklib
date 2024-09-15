@@ -1,6 +1,9 @@
 import setuptools
-with open("README.md", "r") as fh:
+import codecs
+
+with codecs.open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
+    
 setuptools.setup(
     name="dnevniklib",
     version="2.0.1b0",
