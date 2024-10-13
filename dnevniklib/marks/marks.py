@@ -20,7 +20,7 @@ class Marks():
                 Mark(
                     id = mark["id"],
                     value = mark["value"],
-                    comment = mark["comment"],
+                    comment = mark["comment"] if mark['comment'] is not None else "",
                     subject_name = mark["subject_name"],
                     subject_id = mark["subject_id"],
                     control_form_name = mark["control_form_name"],
