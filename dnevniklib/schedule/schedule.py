@@ -31,7 +31,7 @@ class Schedule:
                     Subject(
                         subject_name=activity['lesson']['subject_name'],
                         begin_time=activity['begin_time'],
-                        room_number=activity['room_number'],
+                        room_number=activity['room_number'] if activity['room_number'] is not None else "Не указано",
                         id=UNDEFINED_ID
                     )
                 )
@@ -40,3 +40,5 @@ class Schedule:
                 # print(activity['begin_time'], end='\t')
                 # print(activity['room_number'] )
         return today
+
+
