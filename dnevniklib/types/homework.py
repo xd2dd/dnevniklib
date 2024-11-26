@@ -8,3 +8,6 @@ class Homework(BaseModel):
     subject_name: str
     created_at: str
     is_done: bool = False
+
+    def __str__(self):
+        return f"{self.subject_name} {self.created_at}: {self.description} {'✅' if self.is_done else '❌'}"
